@@ -292,7 +292,7 @@
         <!-- TESTIMONIOS END -->
         <!-- FOOTER -->
 
-		<?PHP
+		<?php
 		include ('footer.php');
 		?>
 

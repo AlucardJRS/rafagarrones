@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
 
-    <body>
+    <body class="page-servicios">
 
         <!-- PRECARGA -->
 
@@ -45,11 +45,9 @@
 
         <!-- HEADER NAV NAVIGATOR -->
 
-        <div>
-			<?php
-			include ('header.php');
-			?>
-        </div>
+		<?php
+		include ('header.php');
+		?>
 
         <!-- SERVICIOS SECCIÓN -->
 
@@ -179,15 +177,9 @@
 		<!-- SERVICIOS FIN -->
 		<!-- FOOTER -->
 
-		<footer>
-			<div>
-				<ul>
-					<?php
-					include ('footer.php');
-					?>
-				</ul>
-			</div>
-		</footer>
+		<?php
+		include ('footer.php');
+		?>
 
 		<!-- FOOTER -->
 		<!-- SCRIPTS-->

@@ -1,52 +1,34 @@
-<!-- HEADER NAV MENU -->
-
-<!-- 
-<style type="text/css" media="screen">
-	A:link {color: black; font-size: 8pt; font-family: arial; text-decoration: none }
-	A:hover {color: black; font-size: 8pt; font-family: arial; text-decoration: none }
-	A:visited {color: black; font-size: 8pt; font-family: arial; text-decoration: none }
-</style>
--->
+<?php
+$currentPage = isset($_SERVER['PHP_SELF']) ? basename($_SERVER['PHP_SELF']) : '';
+?>
 
 <header class="header-section">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="logo">
-					<a href="index.php">
-						<img src="img/logo.png" alt="Footer rgarrones" style="margin: 5px;">
-					</a>                           
-				</div>
+		<div class="header-shell">
+			<div class="logo">
+				<a class="logo-link" href="index.php">
+					<img src="img/logo.png" alt="Rafa Garrones">
+				</a>
+			</div>
 
-				<!-- MENÚ RRSS-->
-				
-				<div class="team-item" style="margin: 5px;">
-							<div class="ti-text" style="position: absolute; padding: 0px; padding-left: 7px; color: #000000">
-								<div class="ti-social">
-									<a href="https://m.facebook.com/rgarrones"><i style="font-size: 14pt;" class="fa fa-facebook"></i></a>
-									<a href="https://twitter.com/Rgarrones21"><i style="font-size: 14pt;" class="fa fa-twitter"></i></a>
-									<a href="https://youtube.com/user/rafa22rafa2008rafa"><i style="font-size: 14pt;" class="fa fa-youtube-play"></i></a>
-									<a href="https://www.instagram.com/rafagarronesfotografiaa/"><i style="font-size: 14pt;" class="fa fa-instagram"></i></a>
-								</div>
-							</div>
-						</div>
+			<nav class="nav-menu mobile-menu">
+				<ul>
+					<li class="<?php echo $currentPage === 'index.php' ? 'active' : ''; ?>"><a href="index.php">Inicio</a></li>
+					<li class="<?php echo $currentPage === 'servicios.php' ? 'active' : ''; ?>"><a href="servicios.php">Servicios</a></li>
+					<li class="<?php echo $currentPage === 'portfolio.php' ? 'active' : ''; ?>"><a href="portfolio.php">Portfolio</a></li>
+					<li class="<?php echo $currentPage === 'nosotros.php' ? 'active' : ''; ?>"><a href="nosotros.php">Sobre nosotros</a></li>
+					<li class="<?php echo $currentPage === 'contacto.php' ? 'active' : ''; ?>"><a href="contacto.php">Contacto</a></li>
+				</ul>
+			</nav>
 
-				<!-- MENÚ -->
-
-				<nav class="nav-menu mobile-menu ">
-					<ul>
-						<li class="active"><a href="index.php">Inicio</a></li>
-						<li><a href="servicios.php">Servicios</a></li>
-						<li><a href="portfolio.php">Portfolio</a></li>
-						<li><a href="nosotros.php">Sobre nosotros</a></li>
-						<li><a href="contacto.php">Contacto</a></li>
-					</ul>                 
-				</nav>
-				<div id="mobile-menu-wrap"></div>
-			</div>            
+			<div class="header-social">
+				<a href="https://m.facebook.com/rgarrones" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/Rgarrones21" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+				<a href="https://youtube.com/user/rafa22rafa2008rafa" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://www.instagram.com/rafagarronesfotografiaa/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+			</div>
 		</div>
+		<div id="mobile-menu-wrap"></div>
 	</div>
 </header>
-
-
 

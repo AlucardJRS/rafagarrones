@@ -90,13 +90,15 @@ $(document).ready(function(){
         margin: 0,
         nav: true,
         items: 1,
-        dots: false,
+        dots: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         navText: ['<span class="arrow_carrot-left"></span>', '<span class="arrow_carrot-right"></span>'],
-        smartSpeed: 1200,
+        smartSpeed: 1400,
         autoHeight: false,
-        autoplay: true
+        autoplay: true,
+        autoplayTimeout: 5400,
+        autoplayHoverPause: true
     });
 	
 
@@ -112,9 +114,11 @@ $(document).ready(function(){
         nav: true,
         navText: ['<span class="arrow_carrot-left"></span>', '<span class="arrow_carrot-right"></span>'],
         stagePadding: 120,
-        smartSpeed: 1200,
+        smartSpeed: 1000,
         autoHeight: false,
         autoplay: true,
+        autoplayTimeout: 3600,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,

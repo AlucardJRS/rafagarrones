@@ -47,13 +47,9 @@
 
         <!-- HEADER NAV MENU-->
 
-        <div class="inner">
-            <ul>
-				<?php
-				include ('header.php');
-				?>
-            </ul>
-        </div>
+		<?php
+		include ('header.php');
+		?>
 
         <!-- FIN HEADER -->
         <!-- SECCIÓN CONTACTO -->
@@ -132,15 +128,9 @@
 
         <!-- FOOTER -->
 
-        <footer>
-            <div class="inner">
-                <ul>
-					<?php
-					include ('footer.php');
-					?>
-                </ul>
-            </div>
-        </footer>
+		<?php
+		include ('footer.php');
+		?>
 
         <!-- FIN FOOTER -->
         <!-- SCRIPTS -->
